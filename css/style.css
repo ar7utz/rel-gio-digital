@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'MontSerrat' ;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(90deg, #00BFFF, #DA70D6);  /*Propriedade que deixa o fundo gradiente, se usa: graus(deg), cor, cor */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    display: flex; /*elementos um do lado do outro e centralizados*/
+    align-items: center;
+    justify-content: space-around;
+    height: 300px; /*altura*/
+    width: 650px; /*largura*/ /*como o justify content está space around, os espaços contam dos lados*/
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div{ /*os quadrados de horas, minutos e segundos*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 170px;
+    flex-direction: column;
+    color: #00BFFF;
+    background: rgba(5, 5, 5, .7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 9px;
+    letter-spacing: 5px;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+}
+
+.relogio span#segundos{
+    color: #DA70D6;
+}
