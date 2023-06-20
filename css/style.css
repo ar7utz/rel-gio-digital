@@ -13,6 +13,13 @@ body{
     justify-content: center;
 }
 
+.container { /*para conseguir colocar uma embaixo da outra*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .relogio {
     display: flex; /*elementos um do lado do outro e centralizados*/
     align-items: center;
@@ -21,7 +28,7 @@ body{
     width: 650px; /*largura*/ /*como o justify content está space around, os espaços contam dos lados*/
     background: transparent;
     border-radius: 5px;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0px 18px 20px rgba(0, 0, 0, .5);
 }
 
 .relogio div{ /*os quadrados de horas, minutos e segundos*/
@@ -31,7 +38,7 @@ body{
     width: 150px;
     height: 170px;
     flex-direction: column;
-    color: #00BFFF;
+    color: #fff;
     background: rgba(5, 5, 5, .7);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7); /*direita, esquerda, baixo, cima*/
     border-radius: 9px;
@@ -48,8 +55,49 @@ body{
     font-size: 10px;
 }
 
-@media screen and (max-width: 670px) {
-    .relogio, .relogio div{
-        display: block;
+.creditos{
+    display: flex; /*elementos um do lado do outro e centralizados*/
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100px; /*altura*/
+    width: 600px; /*largura*/ /*como o justify content está space around, os espaços contam dos lados*/
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 28px 35px rgba(0, 0, 0, .5);
+    flex-direction: row;
+}
+
+.creditos a{ /*para tirar o subilnhado do link*/
+    list-style: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 670px) { /*configura responsividade do site*/ 
+    .relogio{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .relogio div {
+        margin-bottom: 10px; /* Adicione a margem inferior para separar as divs dentro de relogio */
+        height: 900px;
+        width: 200px;
+    }
+    .creditos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        box-shadow: none;
+        height: 100px;
+        width: 600px;
+        background: transparent;
+        border-radius: 5px;
+        flex-direction: row;
     }
 }
