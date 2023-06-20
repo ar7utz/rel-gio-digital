@@ -33,7 +33,7 @@ body{
     flex-direction: column;
     color: #00BFFF;
     background: rgba(5, 5, 5, .7);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7); /*direita, esquerda, baixo, cima*/
     border-radius: 9px;
     letter-spacing: 5px;
 }
@@ -48,6 +48,3 @@ body{
     font-size: 10px;
 }
 
-.relogio span#segundos{
-    color: #DA70D6;
-}
