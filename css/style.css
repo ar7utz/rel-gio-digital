@@ -73,7 +73,7 @@ body{
     text-decoration: none;
 }
 
-@media screen and (max-width: 670px) { /*configura responsividade do site*/ 
+@media screen and (max-width: 640px) { /*configura responsividade do site*/ 
     .relogio{
         margin-top: 90px;
         display: flex;
