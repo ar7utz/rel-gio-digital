@@ -48,3 +48,8 @@ body{
     font-size: 10px;
 }
 
+@media screen and (max-width: 670px) {
+    .relogio, .relogio div{
+        display: block;
+    }
+}
