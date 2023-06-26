@@ -2,7 +2,7 @@
 *{
     margin: 0 auto;
     padding: 0;
-    font-family: 'MontSerrat' ;
+    font-family: 'MontSerrat';
 }
 
 body{
@@ -74,6 +74,9 @@ body{
 }
 
 @media screen and (max-width: 640px) { /*configura responsividade do site*/ 
+    body{
+        background-size: 100vw 100vh; /*para o backgroung ficar sem bugs visuais quando acabava o gradient*/
+    }
     .relogio{
         margin-top: 90px;
         display: flex;
@@ -82,20 +85,21 @@ body{
         box-shadow: none;
         justify-content: space-around;
         margin-bottom: 30px;
+        width: 100%;
     }
-    .relogio div {
+    .relogio div { /*div dos horários*/
         margin-bottom: 10px; /* Adicione a margem inferior para separar as divs dentro de relogio */
         height: 900px;
         width: 200px;
     }
-    .creditos{
+    .creditos{ /*parte onde está o link das redes sociais*/
         display: flex;
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box;
         box-shadow: none;
         height: 100px;
-        width: 600px;
+        width: 400px;
         background: transparent;
         border-radius: 5px;
         flex-direction: row;
